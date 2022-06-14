@@ -4,13 +4,15 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.titulo
-{
+.titulo {
   font-size: 6rem;
   background-color: #28120D;
   text-align: center;
   padding: 4rem;
   color: #E5BD83;
+  animation-name: probandocolores;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
 .padregrid div {
@@ -19,31 +21,26 @@
   font-size: 1.5rem;
   padding: 5px;
   text-align: center;
-  
 }
 
 .padregrid {
   display: grid;
-  grid-template-columns: repeat(5,20%);
+  grid-template-columns: repeat(5, 20%);
   height: 5rem;
   justify-items: stretch;
   justify-content: start;
   align-items: stretch;
   align-content: center;
-
 }
 
 
 .padregrid div a {
   color: black;
-  text-decoration: none
-
-
+  text-decoration: none;
 }
 
 .padregrid div a:hover {
-  background-color: #b9a897
-
+  background-color: #b9a897;
 }
 
 .grilla {
@@ -62,17 +59,24 @@
   background-color: #E5BD83;
   background-size: auto;
   padding: 1.5rem;
-
 }
 
 .main {
   grid-area: main;
-  background-color: #F9E0B7;
+  /* Created with https://www.css-gradient.com */
+  background: #F9E0B7;
+  background: -webkit-linear-gradient(top left, #F9E0B7, #CC8D52);
+  background: -moz-linear-gradient(top left, #F9E0B7, #CC8D52);
+  background: linear-gradient(to bottom right, #F9E0B7, #CC8D52);
 }
 
-.maindemuebles{
+.maindemuebles {
   grid-area: main;
-  background-color: #F9E0B7;
+  /* Created with https://www.css-gradient.com */
+  background: #F9E0B7;
+  background: -webkit-linear-gradient(top left, #F9E0B7, #CC8D52);
+  background: -moz-linear-gradient(top left, #F9E0B7, #CC8D52);
+  background: linear-gradient(to bottom right, #F9E0B7, #CC8D52);
 }
 
 .main h2 {
@@ -83,7 +87,7 @@
 
 }
 
-.textomain{
+.textomain {
   font-size: 2rem;
   padding: 1rem;
   text-align: left;
@@ -99,13 +103,20 @@
   text-align: center;
 }
 
-.contenedor{
+.contenedor {
   display: grid;
-  grid-template-columns:30% 30%;
+  grid-template-columns: 30% 30%;
   justify-content: space-evenly;
 }
 
-.contenedordepagos{
+.contenedor:hover {
+  transform: scale(1.15);
+  transition: .4s;
+
+
+}
+
+.contenedordepagos {
   display: grid;
   justify-content: center;
   grid-template-columns: 60%;
@@ -115,12 +126,11 @@
   max-width: 80%;
   padding: 2rem;
   border-radius: 50px;
-  
+
 }
 
 .footer {
   grid-area: footer;
-  background-color: #E5BD83;
   text-align: center;
   font-size: 2rem;
   padding: 2rem;
@@ -129,70 +139,107 @@
   justify-content: center;
   flex-wrap: wrap;
   align-content: flex-end;
-
+  /* Created with https://www.css-gradient.com */
+  background: #F9E0B7;
+  background: -webkit-linear-gradient(top left, #F9E0B7, #CC8D52);
+  background: -moz-linear-gradient(top left, #F9E0B7, #CC8D52);
+  background: linear-gradient(to bottom right, #F9E0B7, #CC8D52);
 }
 
 .lorem {
   font-size: 1rem;
 }
 
-.redes{
+.redes {
   padding: 1rem;
- 
+
 }
 
-.wsp{
-  position:fixed;
-  width:60px;
-  height:60px;
-  bottom:40px;
-  right:40px;
-  background-color:#25d366;
-  color:#FFF;
-  border-radius:50px;
-  text-align:center;
-  font-size:30px;
+.wsp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
   box-shadow: 2px 2px 3px #999;
-  z-index:100;
+  z-index: 100;
 }
+
 .wsp:hover {
   text-decoration: none;
   color: #25d366;
-  background-color:#fff;
+  background-color: #fff;
 }
 
-.my-wsp{
-  margin-top:16px;
+.my-wsp {
+  margin-top: 16px;
 }
 
-.formulario{
-  background: url(../ProyectoHtml/silla.jpeg) no-repeat center center ;
+.formulario {
+  background: url(../ProyectoHtml/silla.jpeg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin: 0 auto; /* Centramos el formulario */
+  margin: 0 auto;
+  /* Centramos el formulario */
   max-height: 5fr;
-  width: 70%;   /* Sin ancho no podemos centrar el formulario */
-  background-color: white; /* Color blanco para el formulario */
-  padding: 2rem; /* separamos los bordes del form del resto de elementos */
-  border-radius: 0.5rem; /* Redondeamos los bordes del form */
+  width: 70%;
+  /* Sin ancho no podemos centrar el formulario */
+  background-color: white;
+  /* Color blanco para el formulario */
+  padding: 2rem;
+  /* separamos los bordes del form del resto de elementos */
+  border-radius: 0.5rem;
+  /* Redondeamos los bordes del form */
   text-align: center;
   align-content: center;
   margin-bottom: 2rem;
   margin-top: 2rem;
-  
 }
 
-input, textarea {
-  padding: 2px; /* Separamos la letra del interior (contenido) en los inputs de los bordes */
+input,
+textarea {
+  padding: 2px;
+  /* Separamos la letra del interior (contenido) en los inputs de los bordes */
 }
 
 label {
-  display: block; /* Ahora los inputs quedan debajo de los label */
-  padding: 2px; /* Separando espacios internos */
+  display: block;
+  /* Ahora los inputs quedan debajo de los label */
+  padding: 2px;
+  /* Separando espacios internos */
 }
 
+/* TRANSICIÓN FORMULARIO */
+.formulario :hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+/* ANIMACIONES - KEYFRAMES */
+@keyframes probandocolores {
+  0% {
+    background-color: #CC8C52;
+  }
+
+  25% {
+    background-color: #BF5E3A;
+  }
+
+  50% {
+    background-color: #421E25;
+  }
+
+  100% {
+    background-color: #28120D;
+  }
+}
 
 /* RESPONSIVE DESIGN - MEDIA QUERY - MOBILE LAST */
 /* MOBILE LAST  = MAX-WIDTH*/
@@ -200,10 +247,10 @@ label {
 
   .padregrid {
     display: grid;
-    grid-template-columns: repeat(5,20%);
+    grid-template-columns: repeat(5, 20%);
     height: 10rem;
     justify-items: stretch;
-    
+
     justify-content: start;
     align-items: stretch;
     align-content: center;
@@ -215,40 +262,42 @@ label {
     font-size: 1.5rem;
     padding: 5px;
     text-align: center;
-    
+
   }
 }
 
 /* Dispositivos chicos // SM */
 @media (max-width:600px) {
 
-  .contenedor{
+  .contenedor {
     display: grid;
-    grid-template-columns:30% 30%;
+    grid-template-columns: 30% 30%;
     justify-content: space-evenly;
     min-height: 60%;
   }
 
-  .titulo{
-  font-size: 5rem;
-  text-align: center;
-  padding: 3rem;}
-  
+  .titulo {
+    font-size: 5rem;
+    text-align: center;
+    padding: 3rem;
+  }
+
   .padregrid div {
-  font-size: 1.5rem;
-  padding: 4px;}
+    font-size: 1.5rem;
+    padding: 4px;
+  }
 
   .padregrid {
-    grid-template-columns: repeat(3,8.5rem);
+    grid-template-columns: repeat(3, 8.5rem);
     grid-template-rows: 6rem 6rem;
     padding: 20px;
   }
-  
-.textomain{
-  font-size: 1rem;
-  padding: 0.5rem;
-  text-align: left;
-}
 
-  
+  .textomain {
+    font-size: 1rem;
+    padding: 0.5rem;
+    text-align: left;
+  }
+
+
 }
